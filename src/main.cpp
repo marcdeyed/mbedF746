@@ -126,12 +126,12 @@ void setup_ui() {
     lv_obj_align(label_state, LV_ALIGN_CENTER, 0, -50);
 
     label_slider = lv_label_create(scr);
-    lv_label_set_text(label_slider, " Reglage d Intensite ");
+    lv_label_set_text(label_slider, " Reglage d Intensite");
     lv_obj_align(label_slider, LV_ALIGN_CENTER, 0, 20);
 }
 
 
-
+ 
 int main() {
     char gps_data;
 
