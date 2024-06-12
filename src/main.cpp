@@ -154,9 +154,8 @@ int main() {
         while (gps.readable()) 
         {
             gps.read(&gps_data, 1);
-
             if (gps_data == '\n') {
-                gpsBuffer[bufferIndex] = '\0';
+                gpsBuffer[bufferIndex] ='\0';
 
                 // Vérification et extraction de l'heure si la trame est $GNRMC
                 if (strncmp(gpsBuffer, "$GNRMC", 6) == 0) 
